@@ -1,0 +1,35 @@
+<%- include("_header") -%>
+<div class="container-fluid blue_band"></div>
+
+  <% if(typeof alert!= "undefined" && alert) { %>
+    <p class="alert alert-danger px-5"><%= alert %></p>
+  <% } %> 
+  <% if(typeof message!= "undefined" && message) { %>
+    <p class="alert alert-success px-5"><%= message %></p>
+  <% } %> 
+
+ <div class="container-fluid px-5  mb-4">
+
+    <div class="container mb-4">
+      <div class="row mb-5">
+        <div class="col">
+            <h2 class="sms_blue mt-5">A complete service of Reports</h2>
+            <div class="text font-weight-light mt-5 mb-4">
+            The Space Sustainability Report (SSR) is a summary published monthly and biannually which contains reports and market insights, information and graphs useful for satellite operators about various key figures such as the number of active satellites, the number of space debris, a long term prediction system of launches…
+            A more complete report is also available annually. 
+            </div>
+        </div>
+        <div class="col">
+            <div class="mt-5 mb-4">
+              <img src="/images/report1.jpg" width="500" height="333" class=" border rounded float-right" alt="report">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mb-4">
+<p class="sms_blue px-5 mt-4 mb-4 mx-5">Report 1</p>
+
+<p class="sms_blue px-5 mt-4 mb-4 mx-5">Report 2</p>
+</div>
+
+<%- include("_footer") -%>

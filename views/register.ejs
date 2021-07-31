@@ -1,0 +1,46 @@
+<%- include("_header") -%>
+<div class="container-fluid blue_band"></div>
+
+
+  <% if(typeof alert!= "undefined" && alert) { %>
+    <p class="alert alert-danger px-5"><%= alert %></p>
+  <% } %> 
+  <% if(typeof message!= "undefined" && message) { %>
+    <p class="alert alert-success px-5"><%= message %></p>
+  <% } %> 
+  
+
+<div class="container px-5 mb-4 mt-5">
+
+  <h1 class="sms_blue mt-4 mb-4 ">Register</h1>
+  <form action="/auth/register" method="POST">
+    <div class="form-group ">
+      <label for="firstname">Firstame</label>
+      <input type="text class="form-control" id="firstname" name="firstname" required>
+    </div>
+    <div class="form-group ">
+      <label for="lastname">Lastname</label>
+      <input type="text class="form-control" id="lastname" name="lastname" required>
+    </div>
+    <div class="form-group ">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+    <div class="form-group">
+      <label for="passwordConfirm">Confirm Password</label>
+      <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="rgpdCheck" required>
+      <label class="form-check-label" for="rgpdCheck">I have read and I agree with <a href="/terms_and_conditions">the terms and conditions.</a></label>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+</div>
+
+
+<%- include("_footer") -%>

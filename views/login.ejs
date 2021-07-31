@@ -1,0 +1,31 @@
+<%- include("_header") -%>
+<div class="container-fluid blue_band"></div>
+
+  <% if(typeof alert!= "undefined" && alert) { %>
+    <p class="alert alert-danger px-5"><%= alert %></p>
+  <% } %> 
+  <% if(typeof message!= "undefined" && message) { %>
+    <p class="alert alert-success px-5"><%= message %></p>
+  <% } %>
+
+ <div class="container px-5 mb-4 mt-5">
+  <h1 class="sms_blue mt-4 mb-4 ">Login</h1>
+  <h5 class="font-weight-light mb-5 ">New user?<a href="/register"> Create an account</a></h5>
+    <form action="/auth/login" method="POST">
+      <div class="form-group ">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+</div>
+</div>
+
+
+
+<%- include("_footer") -%>

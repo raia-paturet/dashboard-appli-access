@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sharemyspace User Panel</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
+</head>
+
+<body>
+<div class="header">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
+      <a class="navbar-brand px-5" href="/">
+      <img src="/images/LOGO_sms.png" width="244" height="60" class="d-inline-block align-top" alt="logo share my space">
+      </a>
+      <ul class="navbar-nav mr-auto px-5 mx-3">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle font-weight-normal" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+          Solutions
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://indemn.herokuapp.com/">INDEMN</a>
+              <a class="dropdown-item" href="http://fleetcontrolpanel.sharemyspace-calm.space/">Fleet control panel</a>
+              <a class="dropdown-item" href="http://visualization.sharemyspace-calm.space/">Conjunction control panel</a>
+              <a class="dropdown-item" href="/">Manext</a>
+            </div>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link font-weight-normal" href="/offers">Offers</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link font-weight-normal" href="/reports">Reports</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-md-auto ">
+        <% if (login_info==true) { %>
+          <li class="nav-item">
+            <a class="nav-link font-weight-normal" href="/profil">Profil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-normal" href="/logout">Logout</a>
+          </li>
+
+        <% } else { %>
+        <li class="nav-item">
+            <a class="nav-link font-weight-normal mr-5" href="/login">Login</a>
+          </li>
+    
+          
+        <% } %>
+      </ul>
+    </nav> 
+</div>
+    
+
+  </div>
+

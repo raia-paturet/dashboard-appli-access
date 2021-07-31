@@ -1,0 +1,15 @@
+<%- include("_header") -%>
+<div class="container-fluid blue_band"></div>
+
+  <% if(typeof alert!= "undefined" && alert) { %>
+    <p class="alert alert-danger px-5"><%= alert %></p>
+  <% } %> 
+  <% if(typeof message!= "undefined" && message) { %>
+    <p class="alert alert-success px-5"><%= message %></p>
+  <% } %> 
+
+
+<h1 class="px-5 mt-5 mb-5 mx-5">Terms and Conditions</h1>
+ 
+
+<%- include("_footer") -%>

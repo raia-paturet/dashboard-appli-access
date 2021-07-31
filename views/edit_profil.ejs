@@ -1,0 +1,113 @@
+<%- include("_header") -%>
+
+  <% if(typeof alert!= "undefined" && alert) { %>
+    <p class="alert alert-danger px-5"><%= alert %></p>
+  <% } %> 
+  <% if(typeof message!= "undefined" && message) { %>
+    <p class="alert alert-success px-5"><%= message %></p>
+  <% } %> 
+
+
+
+<h1 class="px-5 mt-5 mb-5 mx-5">Edit profil</h1>
+  
+    <ul>
+			<% for (const item of datas) { %>
+
+        <div class="mx-5">
+        <form class="form-inline" action="/auth/update" method="POST">
+          <div class="form-group mb-2">
+            <label for="staticfirstname" class="sr-only">staticfirstname</label>
+            <input type="text" readonly class="form-control-plaintext" id="staticfirstname" value="Firstname">
+          </div>
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="firstname" class="sr-only">firstname</label>
+            <input type="text" class="form-control" id="firstname" value="<%=item.firstname %>" name="firstname">
+          </div>
+         
+        </form>
+
+        <form action="/auth/update" class="form-inline" method="POST">
+          <div class="form-group mb-2">
+            <label for="staticlastname" class="sr-only">staticlastname</label>
+            <input type="text" readonly class="form-control-plaintext" id="staticlastname" value="Lastname">
+          </div>
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="lastname" class="sr-only">lastname</label>
+            <input type="text" class="form-control" id="lastname" placeholder="<%= item.lastname %>" name="lastname">
+          </div>
+         
+        </form>
+
+        <form class="form-inline" action="/auth/update" method="POST">
+          <div class="form-group mb-2">
+            <label for="email" class="sr-only">Email</label>
+            <input type="text" readonly class="form-control-plaintext" id="email" value="Email">
+          </div>
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="inputPassword2" class="sr-only">email</label>
+            <input type="email" class="form-control" id="email" placeholder="<%= item.email %>">
+          </div>
+        
+        </form>
+
+      
+      <button type="submit" class="btn btn-primary mb-2">Update</button>
+      </div>
+    <% } %>
+  </ul>
+</div>
+
+<%- include("_footer") -%>
+
+
+<%- include("_header") -%>
+
+<% if(typeof message!= "undefined" && message) { %>
+    <p class="alert alert-danger mt-4"><%= message %></p>
+  <% } %> 
+
+
+
+
+
+
+
+
+    <h1 class="px-5 mt-5 mx-5">Profil</h1> 
+    <ul>
+    <% for (const item of datas) { %>
+
+    <div class=" pb-2 pt-2">
+      <div class="jumbotron px-5 mx-5">
+
+        <ul class="list-inline">
+          <li class="list-inline-item px-5"><h5 class="card-title">Firstname : </h5></li>
+          <li class="list-inline-item"><h6 class="card-title"><%= item.firstname %></h4></li>
+        </ul>
+
+        <ul class="list-inline">
+          <li class="list-inline-item px-5"><h5 class="card-title">Lastname : </h5></li>
+          <li class="list-inline-item"><h6 class="card-title"><%= item.lastname %></h6></li>
+        </ul>
+
+        <ul class="list-inline">
+          <li class="list-inline-item px-5"><h5 class="card-title">Email : </h5></li>
+          <li class="list-inline-item"><h6 class="card-title"><%= item.email %></h6></li>
+        </ul>
+
+        <ul class="list-inline">
+          <li class="list-inline-item px-5"><h5 class="card-title">Access : </h5></li>
+          <li class="list-inline-item"><h6 class="card-title">Premium </h6></li>
+        </ul>
+
+        <div class="px-5 mt-3">
+        <a href="edit_profil" class="btn btn-primary mb-2 role="button" aria-pressed="true">Edit profil</a> 
+        </div>
+      </div>
+    <% } %>
+    </ul>
+
+
+
+<%- include("_footer") -%>

@@ -1,0 +1,46 @@
+<%- include("_header") -%>
+<div class="container-fluid blue_band"></div>
+
+  <% if(typeof alert!= "undefined" && alert) { %>
+    <p class="alert alert-danger px-5"><%= alert %></p>
+  <% } %> 
+  <% if(typeof message!= "undefined" && message) { %>
+    <p class="alert alert-success px-5"><%= message %></p>
+  <% } %> 
+
+
+ <div class="container px-5 mb-4 mt-5">
+  <h1 class="sms_blue mt-4 mb-4 ">Your Account</h1>
+   
+      <% for (const item of datas) { %>
+      
+        <form  action="/auth/update" method="POST">
+          <div class="form-group mb-2 form-inline">
+            Firstname
+          </div>
+          <div class="form-group mb-2 form-inline">
+            <label for="firstname" class="sr-only">firstname</label>
+            <input type="text" class="form-control" id="firstname" value="<%=item.firstname %>" name="firstname">
+          </div>
+          <div class="form-group mb-2 form-inline">
+             Lastname
+          </div>
+          <div class="form-group mb-2">
+            <label for="lastname" class="sr-only">lastname</label>
+            <input type="text" class="form-control" id="lastname" placeholder="<%= item.lastname %>" value="<%= item.lastname %>" name="lastname">
+          </div>
+          <div class="form-group mb-2">
+            Email
+          </div>
+          <div class="form-group mb-2">
+            <label for="inputPassword2" class="sr-only">email</label>
+            <input type="email" class="form-control" id="email" placeholder="<%= item.email %>" value="<%= item.email %>" name="email">
+          </div>
+          <button type="submit" class="btn btn-primary mt-5 mb-2">Update Account</button>
+        </form>
+      
+    <% } %>
+
+</div>
+
+<%- include("_footer") -%>

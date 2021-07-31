@@ -1,0 +1,219 @@
+<%- include("_header") -%>
+<div class="container-fluid blue_band"></div>
+
+  <% if(typeof alert!= "undefined" && alert) { %>
+    <p class="alert alert-danger px-5"><%= alert %></p>
+  <% } %> 
+  <% if(typeof message!= "undefined" && message) { %>
+    <p class="alert alert-success px-5"><%= message %></p>
+  <% } %> 
+
+ <div class="container-fluid px-5 mb-4">
+  <div class="container mb-4">
+      <div class="row">
+        <div class="col">
+            <h2 class="sms_blue mt-5">A complete service for Space Situational Awareness</h2>
+            <div class="text font-weight-light mt-5 mb-4">
+            Today on the most critical orbits, the risk of losing a satellite due to a collision has attained 5% over its lifetime. The financial outcomes are significant and the risk is growing, due to the 2,000 Active Satellites generating 8,800 tons of human-made space junk, and leading to 800,000 pieces of destructive debris, mainly coming from cascading collisions. 
+            This is the reason why Share My Space has been committed in the Space Situational Awareness market since 2017, offering different services.
+            </div>
+        </div>
+        <div class="col">
+            <div class="mt-5 mb-4">
+              <img src="/images/offers3.jpg" class="rounded float-right" alt="telescope">
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-4">
+        <div id="accordion">
+            <div class="border rounded offers_card mt-5 mb-4 pt-3 pb-3">
+                <div class="row align-items-center">
+                    <div class="col px-5">
+                        <img src="/images/fleet.svg" width="90" height="90"  alt="" ></a>
+                    </div>
+                    <div class="col-10">
+                      <h5 class="sms_blue">CALM</h5>
+                      <p class="card-text font-weight-light">
+                        CALM (Collision Avoidance by Limited Manoeuvers) service is a software developed by Share My Space, which gives satellite operators the vision of what objects will be a potential threat for their space assets.<br>  It allows satellite operators to minimize the risk and maximize the utilization of the spacecraft.
+                      </p>
+                      <button class="btn btn-link font-weight-light" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                      See More...
+                      </button>
+                    </div>
+                    <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body font-weight-light px-5">
+                          <p>The system is based on a machine learning algorithm that provides accurate orbital data with quantified uncertainties. The program is trained with a number of accurate orbital data and relies on our own telescope observations. <br>  
+                          Our main objective is to deliver accurate collision probability forecasts to satellite operators, so that they can minimize the collision risk and the fuel consumption related to maneuvers. </p>
+                          <p><b>How does it work?</b></p>  
+                          <p>The Artificial Intelligence based tool exploiting proprietary deep learning algorithms provides accurate debris orbital data, with precisely quantified uncertainties.
+                          CALM combines and synchronizes data from external sources with measurements obtained with our own equipment and from our own network of observatory stations to expand the catalogue of debris, while simultaneously improving the positioning precision.
+                          We use the space observation data which is available from our scientific partners with our data processing pipeline to cover all orbits and deliver the relevant data to our customer in near real time. This data allows operators to make the right decision whether they should perform a collision avoidance maneuver or not.
+                          </p>
+                          <p><b>How to use it?</b></p>  
+                          <p>Our service operates thanks to 3 useful tools included in the offer:</p>
+                          <p>  
+                          •   The fleet control panel, which represents in a row the sequence of close approaches between a given satellite and cataloged objects.<br>  
+                          •   The satellite control panel, which allows the user to visualize the risk timeline for a given satellite, and for various maneuver scenarios.<br>  
+                          •   The close approach panel, a 3D representation of the object population at the time of closest approach, zoomed on the location of the collision.</p>
+                          <p><b>What are the advantages?</b></p>  
+                          <p>With CALM, Share My Space delivers Conjunction Data Messages to satellite operators only if the estimated collision probability is higher than a threshold provided by the customers.</p>
+                          <p>This will relieve them from 4 pains:</p> 
+                          <p>
+                          •   Losing a satellite<br>  
+                          •   Performing a very costly in fuel satellite maneuver only when necessary<br>  
+                          •   Having to deal with several thousands of messages per day while taking the risk of missing the important one, and maintaining expensive teams of experts working on a 7/24 basis.
+                           </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border rounded offers_card mt-5 mb-4 pt-3 pb-3 px-5">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img src="/images/sat_id.svg" width="90" height="90"  alt=""></a>
+                    </div>
+                    <div class="col-10">
+                      <h5 class="sms_blue">Satellite ID</h5>
+                      <p class="card-text font-weight-light">Satellite ID is satellite's grey card containing the history of the maneuvers and the risks of collision. It provides a summary of everything that happened in terms of collision probability for this satellite. 
+                      </p>
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                      See More...
+                      </button>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body font-weight-light px-5">
+                            <p><b>What are the advantages?</b></p>
+                            <p>Thanks to the parameters contained in satellite ID card, the prediction of future maneuvers and the life span of the satellite are easier to calculate. 
+                            If 2 satellites are equipped, the system can compare both of them according to their alerts in order to refine the strategies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border rounded offers_card mt-5 mb-4 pt-3 pb-3 px-5">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img src="/images/report.svg" width="90" height="90"  alt="" ></a>
+                    </div>
+                    <div class="col-10">
+                      <h5 class="sms_blue">Space Sustainability Report</h5>
+                      <p class="card-text font-weight-light ">The Space Sustainability Report (SSR) is a summary published monthly and biannually which contains reports and market insights, information and graphs useful for satellite operators about various key figures such as the number of active satellites, the number of space debris, a long term prediction system of launches…
+                      A more complete report is also available annually. 
+                      </p>
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                      See More...
+                      </button>
+                    </div>
+                    <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body font-weight-light px-5">
+                            <p><b>How does it work? </b></p>
+                            <p>The annual report contains:</p>
+                            <p>
+                             •   In orbit object population (Current status of Share My Space catalogue, changes in the last semester, catalogue evolution forecast)<br>
+                            •   Conjunction events (Critical close approaches and collisions, statistics on latest conjunction events, focus on selected satellites, space debris clusters)<br>
+                            •   Satellite maneuvers (Latest statistics per type of maneuvers and orbits, top 3 of the strangest maneuvers, fuel consumption and fleet ageing)
+                            </p>
+                            <p>The monthly report contains:</p>
+                            <p>
+                            •   Both month and last 12-month key figures (Launches, failures, total active satellites …)<br>
+                            •   Launches and payloads of the month/year<br>
+                            •   The number of satellites by type of orbit<br>
+                            •   Space debris statistics<br>
+                            •   A yearly summary of space debris and a long term prediction
+                            </p>
+                            <p>What are the advantages?</p>
+                            <p>The SSR allows the user to realize a statement about the present situation on defined facts, and to be able to compare or predict.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border rounded offers_card mt-5 mb-4 pt-3 pb-3 px-5">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img src="/images/indemn.svg" width="90" height="90"  alt="" ></a>
+                    </div>
+                    <div class="col-10">
+                      <h5 class="sms_blue">INDEMN</h5>
+                      <p class="card-text font-weight-light">INDEMN is a long-term risk prediction software for space debris collision based on statistical models. The program was made to help satellite operators to take into account the risk related to on-orbit space debris collision when planning the missions of their satellites.</p>
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                      See More...
+                      </button>
+                    </div>
+                    <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body font-weight-light px-5">
+                          <p><b> How does it work?</b></p>
+                          <p>The distribution of space objects at a given date is provided as an input. Several databases are included in the program such as the US Air Force space-track data bases and the NASA NSSDCA catalogue. All the space situation scenarios such as mega-constellation deployment can be implemented as an input to the code. <br>
+                          The density of space debris is computed for various altitudes and a statistical model is able to compute the evolution of the probability of collision for a given spacecraft in time.
+                          </p>
+                          <p><b>What are the advantages?</b></p>
+                          <p>INDEMN allows the user to predict a risk profile for a given satellite mission or for a constellation project (6 months – 60 years), with an optimized user experience.<br>
+                          INDEMN is a tool suited for mission analysis, constellation planning, policy impact assessment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="border rounded offers_card mt-5 mb-4 pt-3 pb-3 px-5">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img src="/images/manext.svg" width="90" height="90"  alt="" ></a>
+                    </div>
+                    <div class="col-10">
+                      <h5 class="sms_blue">MANEXT</h5>
+                      <p class="card-text font-weight-light">
+                      MANEXT is a set of algorithms used for maneuver detection and characterization, based on time series analysis of the TLE public catalog. 
+                      It is useful for orbit raising, in plane station keeping, out of plane station keeping, reorbitation, change of plane maneuver, GEO location change…
+                      Extracted parameters: Start/stop dates, Delta-V, mass consumption, remaining mass, remaining lifetime estimate. 
+                      </p>
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                      See More...
+                      </button>
+                    </div>
+                    <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body font-weight-light px-5">
+                        <p><b> How does it work?</b></p>
+                        <p>Each maneuver is characterized with an estimated Delta-V consumption, and can be converted in mass consumption when the thruster technology is known. MANEXT is also a database of thousands of maneuvers performed by satellites since the 1990s. The data can be sorted according to their level of normality, such that MANEXT can also be used to detect suspicious on-orbit maneuvers. 
+                        </p>
+                        <p><b>What are the advantages?</b></p>
+                        <p>Manext provides database of all the maneuvers performed by catalogued satellites (LEO / MEO / GEO), and critical information for each maneuver.  It is useful in various domains, such as business intelligence, surveillance, hostile maneuvers, SSA.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border rounded offers_card mt-5 mb-4 pt-3 pb-3 px-5">
+                <div class="row align-items-center">
+                  <div class="col">
+                      <img src="/images/padme.svg" width="90" height="90"  alt="" ></a>
+                  </div>
+                  <div class="col-10">
+                    <h5 class="sms_blue">PADME</h5>
+                    <p class="card-text font-weight-light">
+                    The PADME (Plasma Application for Debris Mitigation around Earth) is a technological project consists in identifying the correlations between the orbit propagation of space objects and the properties of the solar wind using deep learning methods. The solar wind measurement data streams will then be integrated into the real-time CALM algorithm. It relies on multiple solar flux and geomagnetic indices and incorporates real-time, high frequency data.
+                    </p>
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                    See More...
+                    </button>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body font-weight-light px-5">
+                      <p><b>How does it work? </b></p>
+                      <p>Solar events create huge expulsions of plasma particles that can alter a satellite by tens of meters from its nominal trajectory. The algorithm is in the form of a hybrid propagator that measures the difference between predicted and measured trajectory against the solar activity and trains the machine learning algorithm. The results are then injected into CALM in order to improve the whole predictions accuracy.</p>
+                      <p><b>What are the advantages?</b></p>
+                      <p>This technology makes possible the link between the error on the positioning of space objects and the solar activity measured in real time by scientific probes, and thus to make it possible to predict the position of space objects with an error of less than 100m, 24 hours in the future.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <%- include("_footer") -%>

@@ -1,0 +1,48 @@
+body {
+      font-family: Nunito,Helvetica,Arial,sans-serif;
+}
+
+.btn-lg   { 
+    background-color: #3f5d9f;
+    color: white!important;
+}
+
+.btn-primary{
+    background-color: #3f5d9f;
+       color: white!important;
+}
+
+.container-fluid  { 
+   padding-right: 0px!important;
+	padding-left: 0px;
+}
+
+.blue_band   { 
+   background-color: #3f5d9f;
+   height:60px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-family: Nunito,Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.1em;
+    color: #555;
+}
+
+.card {
+    border: 0px;
+}
+
+.border-left {
+    border: 2px solid ;
+}
+
+.sms_blue {
+    color: #3f5d9f;
+}
+
+.offers_card {
+    background-color: #EAF1FF;
+    border: 1px solid #3f5d9f!important;
+}
