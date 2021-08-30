@@ -45,7 +45,7 @@ exports.login = async (req, res) => {
 exports.register = (req, res) => {
 
 	const { firstname, lastname, email, password, passwordConfirm } = req.body;
-	//console.log('req.body', req.body);
+	console.log('req.body', req.body);
 	pool.query('SELECT email FROM users WHERE email = ?', [email], async (error, results) => {
 		if(error) {
 			console.log(error);
